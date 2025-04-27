@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'varela round' , 'poppins';
+}
+
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    height : 40px;
+    padding : 0 7.5%;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.027);
+}
+
+.navbar1 .nav1-opt{
+    display: inline-block;
+}
+.navbar1 .nav1-opt ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    /* padding-bottom: 20px; */
+}
+.navbar1 .nav1-opt ul li a{
+    text-decoration: none;
+    color : grey;
+    font-size: 15px;
+}
+/* navbar 2 starts here */
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    height : 40px;
+    padding : 0 30px;
+    background-color: whitesmoke;
+    /* border-bottom: 1px solid rgba(0, 0, 255, 0.068); */
+}
+.navbar2 .nav2-opt ul{
+    margin-left: 55px;
+}
+.navbar2 .nav2-opt ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar2 .nav2-opt ul li a{
+    text-decoration: none;
+    color : grey;
+    font-size: 14px;
+}
+.navbar2 .nav2-opt ul li a{
+    text-decoration: none; 
+}
+
+.navbar2 .nav2-opt-call{
+    margin-top: 0px;
+    margin-right: 90px;
+}
+.navbar2 .nav2-opt-call >h4{
+    
+    color : blue;
+}
+
+.navbar2 .nav2-opt-call h6{
+    color : blue;
+    padding-left: 15px;
+    font-size: 10px;
+}
+
+/* hero-section started */
+.hero-section{
+    height : 90vh;
+    background: rgba(0, 0, 255, 0.788);
+    margin : 5px 20px;
+    border-radius: 15px;
+}
+.hero-sec{
+    margin-left: 80px;
+    padding-top: 30px;
+}
+.hero-sec >h4{
+    color : white;
+    padding-top : 30px;
+    font-weight: 100;
+} 
+.hero-section h1{
+    padding-top: 30px;
+    font-family: 'poppins';
+    font-size: 3.8em;
+    font-weight: bold;
+    color : white;
+}
+h3{
+    padding: 20px 0;
+    /* font-size: 18px; */
+    font-weight: 300;
+    color : white;
+}
+button{
+    height : 3.5em;
+    width : 12em;
+    color : blue;
+    font-weight: 900;
+    font-size: 15px;
+    background: rgba(255, 255, 0, 0.781);
+    border: none;
+}
+.hero-sec img{
+    /* height : 50%; */
+    width : 40%;
+    position : absolute;
+    top : 19%;
+    right : 9%;
+}
+
+@media (max-width : 700px){
+    .nav1-opt ul li a{
+        display: none;
+    }
+    .nav2-opt ul li a{
+        display: none;
+    }
+    .navbar2 .nav2-opt-call{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top : 0;
+        right : 10px;
+    }
+    .hero-sec{
+        margin-left: 20px;
+    }
+    .hero-section h1{
+        font-size: 2em;
+    }
+    .hero-section h4{
+        font-size: 1em;
+    }
+    .hero-sec img{
+        width : 34%;
+    }
+}
+
+/* setions portion started */
+/* section 1 is here */
+.sections{
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 37vh;
+    margin : 20px;
+    border-radius: 15px;
+}
+.sections .sec1{
+    padding-left: 30px;
+    flex-basis: 30%;
+}
+.sec1 h1{
+    font-size: 1.5rem;
+     /* font-size: 30px; */
+     padding-bottom: 20px;
+}
+.sec1 p{
+    padding-bottom: 20px;
+}
+.sec1 a{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px){
+    .sections .sec1{
+        padding-left: 5px;
+        font-size: 0.7rem;
+    }
+    .sec1 h1{
+        font-size: 0.9rem;
+    }
+    .sec1 a{
+        font-size: 0.6rem;
+    }
+}
+
+/* section 2 started */
+.sec2{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    height : 13vh;
+    margin : 20px;
+    border-radius: 5px;
+}
+.sec2 >input{
+    margin-left: 5px;
+}
+.sec2 .srch1{
+    border: none;
+    outline: none; 
+    width : 63%;
+}
+.sec2 .srch{
+    cursor: pointer;
+    height : 12.7vh;
+    font-size: 20px;
+    font-weight: 500;
+    color : skyblue;
+    background: rgba(0, 0, 255, 0.863);
+}
+.sec2 span{
+    height : 12.7vh;
+    border: none;
+    padding-top: 20px;
+     text-align: center;
+     font-size: 35px;
+     font-weight: 900;
+}
+.srch1>::placeholder{
+    color : grey;
+    font-size: 15px;
+}
+
+@media (max-width:700px){
+    .sec2 .srch{
+        font-size: small;
+    }
+    .sec2 span{
+        margin: 10px;
+        font-size: large;
+    }
+}
+
+/* section 3 startde */
+.sec3{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.sec3 span{
+    margin-right: 8px;
+}
+.sec3 i{
+    color : white;
+    border : 2px solid rgb(172, 255, 47);
+    background: rgb(172, 255, 47);
+    margin : 0 3px;
+    padding: 3px;
+}
+.sec3 .green{
+    color : green;
+    border: none;
+    background-color: white;
+}
+@media (max-width: 700px){
+    .sec3{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 9px;
+    }
+}
+/* sec4 started */
+.sec4 h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Times, serif;
+    padding: 20px 0;
+}
+@media (max-width: 700px){
+    .sec4 h1{
+        font-size : 30px;
+    }
+}
+
+/* section 5 started */
+.sec5{
+    padding: 0 40px;
+    height : 90vh;
+    background: rgba(0, 0, 255, 0.788);
+    margin : 5px 100px;
+    border-radius: 15px;
+    color : white;
+}
+.sec5 img{
+    position: relative;
+    top: 22.5%;
+    left : 9%;
+    width : 80%;
+}
+.sec5 button{
+    display: block;
+    color : black;
+    box-shadow: 0 0 5px 0 yellow;
+    position: absolute;
+    left : 42%;
+
+}
+.sec5 h2{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sec5 h1{
+    padding: 30px 0;
+    text-align: center;
+    font-family: Times, serif;
+}
+.sec5 p{
+    padding-bottom: 30px;
+    text-align: center;
+}
+@media (max-width: 700px){
+    .sec5{
+        margin: 10px;
+    }
+    .sec5 button{
+        left : 27%;
+    }
+    .sec5 img{
+        left : 1%;
+        width : 100%;
+        height : 25%;
+    }
+}
+
+/* section 6 started */
+.sec6, .sec7{
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px;
+    color : white;
+}
+
+.sec6-1, .sec6-2,.sec6-3 {
+    border :2px solid blue;
+    background: rgba(0, 0, 255, 0.808);
+    height : 95vh;
+    width : 320px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+.sec6 button, .sec7 button{
+    display: block;
+    color : black;
+    margin : 30px 60px;
+}
+.sec6-1 img{
+    width : 280px;
+    height : 280px;
+    position: relative;
+    top : 20px;
+}
+.sec6-2 img{
+    width : 280px;
+    height : 280px;
+    position: relative;
+    top : 20px;
+}
+.sec6-3 img{
+    width : 250px;
+    height : 250px;
+}
+.sec6 h2, .sec7 h2{
+    padding: 20px 0;
+    text-align: center;
+    font-family: arial;
+    font-weight: 100;
+}
+.sec6 h1, .sec7 h1{
+    text-align: center;
+    font-family: Times, serif;
+    font-size: 2.2rem;
+    /* font-size : 40px; */
+}
+@media (max-width: 700px){
+    .sec6, .sec7{
+        flex-direction: column;
+        /* margin: 0; */
+    }
+    .sec6-1,.sec6-2{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .sec6 button{
+        margin : 40px;
+    }
+    .sec6 h1{
+        font-size: 1rem;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    /* section 7 media query */
+     .sec7 h1{
+        font-size: 1.3rem;
+        text-align: center;
+        padding-left: 0;
+     }
+}
+
+/* section 7 started */
+.sec7 .sec6-1, .sec7 .sec6-2{
+    border :2px solid blue;
+    background: #0C4A9C;
+    height : 95vh;
+    width : 500px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+.sec7 button{
+    margin : 30px 125px;
+}
+@media (max-width: 700px){
+    .sec7{
+        flex-direction: column;
+        width : 460px;
+        margin : 5px;
+    }
+}
+
+
+/* section 8 started */
+.sec8{
+  text-align: center;
+  color : black;
+}
+.sec8 h1{
+    font-size: 45px;
+    font-family: Times, serif;
+}
+.sec8 p{
+    font-size: 20px;
+}
+.sec8-part{
+     display: flex;
+     margin : 30px 120px;
+}
+.top{
+    display: inline-block;
+    height : 40px;
+    text-align: center;
+    position: relative;
+    top : 82px;
+    /* top : 15%; */
+    width : 19%;
+    left : 30.5%;
+    background: rgba(0, 0, 255, 0.849);
+    padding: 10px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 20px;
+}
+.sec8-1{
+    margin: 10px;
+    font-weight: 100;
+    color : black;
+    border: 2px solid blue;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.sec8-1 h3{
+     color : black;
+     font-weight: 900;
+}
+.sec8-1 p{
+    color : black;
+    font-size: 15px;
+}
+.sec8-1 .small{
+    height : 20px;
+    margin: 20px 0;
+    background: skyblue;
+}
+
+.sec8-1 h1{
+    color : black;
+    padding: 15px 0;
+}
+.sec8-1 button{
+    margin: 20px 0;
+    color: white;
+    background: #0C4A9C;
+}
+.sec8-1 .line{
+    /* color : blue; */
+    border : 1px solid rgba(0, 0, 255, 0.808);
+    margin : 30px 0;
+}
+.sec8-1 h2{
+    margin-top : 30px;
+}
+.sec8-1 i{
+    color : skyblue;
+    font-size: 50px;
+}
+.sec8-end p{
+    color :rgba(0, 0, 255, 0.596);
+    margin : 30px 125px;
+}
+@media (max-width: 700px){
+    .sec8 h1{
+        font-size: 2rem;
+    }
+    .sec8 p{
+        font-size: 16px;
+    }
+    .sec8-part{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .top{
+    bottom : 150%;
+    left : 25%;
+    width : 50%;
+    }
+    .sec8-end p{
+        margin: 10px 20px;
+    }
+
+}
+
+/* section 9 started */
+.sec9{
+    background: skyblue;
+    width : 80%;
+    height : 200px;
+    padding: 40px 50px;
+    margin : 30px 120px;
+    border-radius: 20px;
+    overflow-y: hidden;
+}
+.sec9 h1{
+    padding: 10px 0;
+}
+.sec9 >button{
+    background: blue;
+    color : white;
+    font-weight: 900;
+    position: relative;
+    left : 780px;
+    bottom : 70px;
+    text-align: center;
+}
+.sec9 i{
+    font-size: 30px;
+    padding: 5px;
+    padding-top: 0;
+}
+@media (max-width: 700px){
+    .sec9{
+        padding: 15px;
+        width: 90%;
+        margin: 0 30px;
+    }
+    .sec9 h1{
+   padding: 0;
+   font-size: 20px;
+    }
+    .sec9 button{
+        padding: 2px 5px;
+        height : 50px;
+        bottom: 0;
+        left: 120px;
+    }
+}
+/* section 10 */
+.sec10 h1{
+    font-size: 50px;
+    text-align: center;
+    font-family : Times,serif;
+    margin: 20px 0;
+}
+.sec10-part{
+    display: flex;
+    margin : 30px 120px;
+    overflow-y: hidden;
+    
+}
+.sec10-1{
+    background: rgba(128, 128, 128, 0.199);
+    margin: 0 10px;
+    padding: 15px;
+}
+.sec10-1 h2{
+    font-size: 15px;
+}
+.sec10-1 p{
+    font-size: 15px;
+    padding: 5px 0;
+}
+.sec10-1 i{
+        color : white;
+        background: green;
+        margin : 10px 1px;
+        padding: 1px;
+}
+.sec10-part >i{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    top : 100px;
+}
+@media (max-width: 700px){
+    .sec10-part{
+        margin: 0;
+    }
+    .sec10 h1{
+        font-size: 1.7rem;
+    }
+    .sec10-1{
+        flex-direction: column;
+    }
+}
+
+/* section 11 started */
+.sec11{
+    margin-top: 30px;
+    height : 100vh;
+    background: rgba(135, 207, 235, 0.616);
+    width : 100%;
+    padding: 70px 100px;
+    font-family: sans-serif;
+}
+.sec11 h1{
+    font-size: 60px;
+    margin-top: 20px;
+    
+}
+.sec11 h3{
+    margin-top : 25px;
+    color : black;
+}
+input{
+    height : 50px;
+    width : 40%;
+    margin: 15px 56px;
+}
+.email, .number{
+    height : 50px;
+    width : 90%;
+    /* border : 0.5px solid black; */
+    /* padding-right: 90%; */
+}
+.sec11 h5{
+    margin: 0px 55px;
+    color : red;
+}
+.submit{
+    background: yellow;
+    color : blue;
+    width : 15%;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+.sec11 input:focus{
+    outline: none;
+    border: none;
+    pointer-events: none;
+}
+::placeholder{
+    padding-left: 10px;
+}
+@media (max-width: 700px){
+    .sec11{
+        padding: 5px;
+    }
+    .sec11 h1{
+        font-size: 30px;
+       
+    }
+    .sec11 h3{
+        margin: 0;
+        font-size: 15px;
+    } 
+}
+
+
+/* section 12 started */
+.sec12 h1{
+    margin: 70px 100px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.sec12 .line{
+    border : 1px solid rgba(0, 0, 255, 0.418);
+    width : 90%;
+    text-align: center;
+    margin-left: 80px;
+}
+.sec12 .inside{
+    margin: 30px 100px;
+    display: flex;
+}
+.sec12 h2{
+    display: flex;
+    justify-content: left;
+}
+.inside >.p{
+    width : 500px;
+    height : 150px;
+    color : rgba(0, 0, 0, 0.637);
+    position: relative;
+    left : 350px;
+}
+@media (max-width: 700px){
+    .inside >.p{
+        left : 60px;
+    }
+    .sec12 .line{
+        width : 70%;
+    }
+}
+
+/* section lats footer section started */
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #495c77;
+    width: 100%;
+    height : 65vh;
+}
+.footer h3{
+   color : white;
+   padding: 10px 8px;
+}
+.list1 li{
+    list-style : none;
+    padding: 7px 8px;
+}
+.list1 li a{
+    color : white;
+    text-decoration: none;
+}
+.last{
+     background: blue;
+     color : white;
+     padding: 20px 35px;
+}
+.last img{
+    color : white;
+    padding: 20px 0;
+}
+.last p{
+    color : white;
+    padding-bottom: 20px ;
+}
+.last i{
+    font-size: 30px;
+    margin: 8px;
+}
+@media (max-width: 700px){
+    .list1{
+        height : 90vh;
+        overflow-y: hidden;
+    }
+    .last{
+        padding: 20px 5px;
+    }
+}
